@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance Services - Alaknanda Solutions</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <img
+          src="{{ url_for('static', filename='img/logo 1.png') }}"
+          alt="Alaknanda Solutions Logo"
+        />
+      </div>
+      <nav>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul id="nav-menu">
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li>
+            <a href="{{ url_for('index') }}#personal-loan">Personal Loan</a>
+          </li>
+          <li><a href="{{ url_for('index') }}#personal-loan">Home Loan</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">More Products</a>
+            <div class="dropdown-content">
+              <div class="dropdown-header">
+                <h4>Alaknanda Solution</h4>
+                <span>(Proprietor form)</span>
+              </div>
+              <ul class="dropdown-menu">
+                <li><a href="{{ url_for('mice') }}">MICE</a></li>
+                <li><a href="{{ url_for('insurance') }}">Insurance</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="{{ url_for('index') }}#about-us">About Us</a></li>
+          <li><a href="{{ url_for('index') }}#mission-vision">Mission</a></li>
+          <li><a href="{{ url_for('index') }}#contact">Contact Us</a></li>
+          <li><a href="{{ url_for('index') }}#partners">Partner Connect</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Insurance Hero Section -->
+    <section class="service-hero">
+      <div class="container">
+        <h1>Insurance Services</h1>
+        <p>
+          Comprehensive insurance solutions to protect what matters most to you
+          and your business.
+        </p>
+      </div>
+    </section>
+
+    <!-- Insurance Services Section -->
+    <section class="service-details">
+      <div class="container">
+        <div class="service-content">
+          <h2>Comprehensive Insurance Coverage</h2>
+          <p>
+            At Alaknanda Solutions, we offer a wide range of insurance products
+            designed to provide financial protection and peace of mind. Our
+            expert advisors help you choose the right coverage for your specific
+            needs.
+          </p>
+
+          <div class="service-grid">
+            <div class="service-item">
+              <h3>Life Insurance</h3>
+              <p>
+                Secure your family's future with comprehensive life insurance
+                policies that provide financial protection.
+              </p>
+              <ul>
+                <li>Term Life Insurance</li>
+                <li>Whole Life Insurance</li>
+                <li>ULIP (Unit Linked Insurance Plans)</li>
+                <li>Endowment Policies</li>
+              </ul>
+            </div>
+
+            <div class="service-item">
+              <h3>Health Insurance</h3>
+              <p>
+                Protect yourself and your loved ones from medical expenses with
+                our health insurance solutions.
+              </p>
+              <ul>
+                <li>Individual Health Plans</li>
+                <li>Family Health Insurance</li>
+                <li>Critical Illness Cover</li>
+                <li>Mediclaim Policies</li>
+              </ul>
+            </div>
+
+            <div class="service-item">
+              <h3>General Insurance</h3>
+              <p>
+                Comprehensive coverage for your assets, vehicles, and business
+                operations.
+              </p>
+              <ul>
+                <li>Motor Insurance</li>
+                <li>Home Insurance</li>
+                <li>Travel Insurance</li>
+                <li>Property Insurance</li>
+              </ul>
+            </div>
+
+            <div class="service-item">
+              <h3>Business Insurance</h3>
+              <p>
+                Specialized insurance solutions for businesses of all sizes and
+                industries.
+              </p>
+              <ul>
+                <li>Commercial Property Insurance</li>
+                <li>Business Interruption Insurance</li>
+                <li>Professional Liability</li>
+                <li>Cyber Insurance</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="insurance-types">
+            <h3>Specialized Insurance Solutions</h3>
+            <div class="insurance-grid">
+              <div class="insurance-item">
+                <h4>Corporate Insurance</h4>
+                <p>
+                  Comprehensive coverage for businesses including property,
+                  liability, and employee benefits.
+                </p>
+              </div>
+              <div class="insurance-item">
+                <h4>Marine Insurance</h4>
+                <p>
+                  Protection for goods during transportation by sea, air, or
+                  land.
+                </p>
+              </div>
+              <div class="insurance-item">
+                <h4>Aviation Insurance</h4>
+                <p>
+                  Specialized coverage for aircraft, airports, and
+                  aviation-related operations.
+                </p>
+              </div>
+              <div class="insurance-item">
+                <h4>Agriculture Insurance</h4>
+                <p>
+                  Crop insurance and livestock protection for farmers and
+                  agricultural businesses.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-benefits">
+            <h3>Why Choose Our Insurance Services?</h3>
+            <div class="benefits-grid">
+              <div class="benefit">
+                <h4>Expert Guidance</h4>
+                <p>
+                  Professional insurance advisors to help you choose the right
+                  coverage
+                </p>
+              </div>
+              <div class="benefit">
+                <h4>Best Rates</h4>
+                <p>Competitive premiums from leading insurance providers</p>
+              </div>
+              <div class="benefit">
+                <h4>Claims Support</h4>
+                <p>
+                  Dedicated claims assistance and support throughout the process
+                </p>
+              </div>
+              <div class="benefit">
+                <h4>Custom Solutions</h4>
+                <p>
+                  Tailored insurance solutions to meet your specific
+                  requirements
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="insurance-features">
+            <h3>Key Features of Our Insurance Services</h3>
+            <div class="features-list">
+              <div class="feature">
+                <h4>Quick Claim Settlement</h4>
+                <p>
+                  Fast and hassle-free claim processing with minimal
+                  documentation
+                </p>
+              </div>
+              <div class="feature">
+                <h4>24/7 Support</h4>
+                <p>
+                  Round-the-clock customer support for all your insurance needs
+                </p>
+              </div>
+              <div class="feature">
+                <h4>Online Policy Management</h4>
+                <p>Easy online access to manage your policies and renewals</p>
+              </div>
+              <div class="feature">
+                <h4>Regular Policy Review</h4>
+                <p>
+                  Periodic review of your coverage to ensure adequate protection
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-section">
+            <h3>Protect What Matters Most</h3>
+            <p>
+              Get comprehensive insurance coverage tailored to your needs.
+              Contact us today for a free consultation.
+            </p>
+            <a href="{{ url_for('index') }}#contact" class="cta-btn"
+              >Get Insurance Quote</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <img
+              src="{{ url_for('static', filename='img/logo 1.png') }}"
+              alt="Alaknanda Solutions Logo"
+              class="footer-logo"
+            />
+            <h3>Alaknanda Solutions</h3>
+            <p>
+              Your trusted partner for financial solutions. Empowering
+              individuals and businesses with reliable loan options.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('index') }}#about-us">About Us</a></li>
+                <li>
+                  <a href="{{ url_for('index') }}#mission-vision"
+                    >Mission & Vision</a
+                  >
+                </li>
+                <li><a href="{{ url_for('index') }}">Services</a></li>
+                <li><a href="{{ url_for('index') }}#contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-section">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <a href="{{ url_for('index') }}#personal-loan"
+                    >Personal Loan</a
+                  >
+                </li>
+                <li>
+                  <a href="{{ url_for('index') }}#personal-loan"
+                    >Business Loan</a
+                  >
+                </li>
+                <li>
+                  <a href="{{ url_for('index') }}#personal-loan">Home Loan</a>
+                </li>
+                <li><a href="{{ url_for('mice') }}">MICE</a></li>
+                <li><a href="{{ url_for('insurance') }}">Insurance</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-section">
+              <h4>Contact Info</h4>
+              <div class="contact-details">
+                <p>
+                  <i class="location-icon"></i> FB-147, High Street Business
+                  Park,<br />Kapurwadi, Thane (W)-400 607, Maharashtra
+                </p>
+                <p>
+                  <i class="phone-icon"></i> +91 9769207860 | +91 9702001230 |
+                  +91 9987600400
+                </p>
+                <p><i class="email-icon"></i> info@alaknandasolutions.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>© 2025 Alaknanda Solutions. All rights reserved.</p>
+            <p class="developed-by">
+              Developed with ❤️ by <span>InnovateHive</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

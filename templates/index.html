@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AK</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <img
+          src="{{ url_for('static', filename='img/logo 1.png') }}"
+          alt="Alaknanda Solutions Logo"
+        />
+      </div>
+      <nav>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul id="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#personal-loan">Personal Loan</a></li>
+          <li><a href="#">Business Loan</a></li>
+          <li><a href="#">Placement</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">More Products</a>
+            <div class="dropdown-content">
+              <div class="dropdown-header">
+                <h4>Alaknanda Solution</h4>
+                <span>(Proprietor form)</span>
+              </div>
+              <ul class="dropdown-menu">
+                <li><a href="{{ url_for('mice') }}">MICE</a></li>
+                <li><a href="{{ url_for('insurance') }}">Insurance</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-slider">
+        <!-- Slide 1: Credit Card -->
+        <div class="hero-slide active">
+          <div class="hero-text">
+            <h2>Looking for <span>Credit Card</span></h2>
+            <p>
+              Avail lifetime free credit card with dynamic rate of interest on
+              basis of your credit score.
+            </p>
+          </div>
+          <div class="hero-image">
+            <img
+              class="hero-illustration"
+              src="../static/img/wmremove-transformed.jpeg"
+              alt="Looking for credit card"
+            />
+          </div>
+        </div>
+
+        <!-- Slide 2: Personal Loan -->
+        <div class="hero-slide">
+          <div class="hero-text">
+            <h2>Need a <span>Personal Loan</span></h2>
+            <p>
+              Get instant personal loans with competitive interest rates and
+              flexible repayment options.
+            </p>
+          </div>
+          <div class="hero-image">
+            <img
+              src="{{ url_for('static', filename='img/logo 1.png') }}"
+              alt="Company Logo"
+            />
+          </div>
+        </div>
+
+        <!-- NEW SLIDE 3: Business Loan -->
+        <div class="hero-slide">
+          <div class="hero-text">
+            <h2>Unsecured <span>Business Loan</span></h2>
+            <p>
+              Get unsecured Business Loan from India's top lenders basis
+              business banking and financial.
+            </p>
+          </div>
+          <div class="hero-image">
+            <!-- 
+              IMPORTANT: Change 'YOUR-NEW-IMAGE.jpg' 
+              to the actual filename of your new image.
+              For example: 'image_8290ad.jpg'
+            -->
+            <img
+              src="../static/img/high-angle-banknotes-with-lock-house.jpg"
+              alt="Unsecured Business Loan"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <!-- NEW DOT for Slide 3 -->
+        <span class="dot" data-slide="2"></span>
+      </div>
+    </section>
+
+    <!-- Loan & Services Section -->
+    <section class="services">
+      <div class="service-card">
+        <img
+          src="{{ url_for('static', filename='img/PL.png') }}"
+          alt="Personal Loan"
+        />
+        <h3>PERSONAL LOAN</h3>
+        <p>
+          This allows consumers to compare the key loan features offered by top
+          lenders.
+        </p>
+        <a href="#">Check Eligibility →</a>
+      </div>
+
+      <div class="service-card">
+        <img
+          src="{{ url_for('static', filename='img/BL.png') }}"
+          alt="Business Loan"
+        />
+        <h3>BUSINESS LOAN</h3>
+        <p>
+          Expand your business with loans & overdrafts at low interest rates
+          from Banks & NBFCs.
+        </p>
+        <a href="#">Check Eligibility →</a>
+      </div>
+
+      <div class="service-card">
+        <img
+          src="{{ url_for('static', filename='img/HL.png') }}"
+          alt="Home Loan"
+        />
+        <h3>HOME LOAN / LAP</h3>
+        <p>
+          Get Home loans for your dream home & encash your property for
+          business/non-business needs.
+        </p>
+        <a href="#">Check Eligibility →</a>
+      </div>
+
+      <div class="service-card">
+        <img
+          src="{{ url_for('static', filename='img/ML.png') }}"
+          alt="Two Wheeler"
+        />
+        <h3>MACHINERY LOAN</h3>
+        <p>
+          Get financing for industrial machinery and equipment at competitive
+          rates.
+        </p>
+        <a href="#">Check Eligibility →</a>
+      </div>
+    </section>
+
+    <!-- Loan Offers Section -->
+    <section id="personal-loan" class="offers">
+      <div class="offer">
+        <div class="offer-img">
+          <img src="../static/img/image-3033200_1280.jpg" alt="Personal Loan" />
+        </div>
+        <div class="offer-details">
+          <h2>Personal Loan offers from top 15+ Banks & NBFCs</h2>
+          <div class="offer-points">
+            <ul>
+              <li>✔ Unsecured Salaried Personal Loans upto ₹1 Cr *</li>
+              <li>✔ Flexi Over Draft Facility Available</li>
+              <li>✔ Quick & Easy process</li>
+            </ul>
+            <ul>
+              <li>✔ Rate Of Interest starts from 10.45% on reducing balance</li>
+              <li>
+                ✔ Convert Credit Card outstanding from 70% reducing to 15%
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer alternate">
+        <div class="offer-img">
+          <img
+            src="{{ url_for('static', filename='img/HL2.png') }}"
+            alt="Home Loan"
+          />
+        </div>
+        <div class="offer-details">
+          <h2>
+            Get Home loans for your dream home & encash your property for
+            business/non business requirements
+          </h2>
+          <div class="offer-points">
+            <ul>
+              <li>✔ Home Loan up to ₹10 Cr from India's top Banks & HFCs</li>
+              <li>✔ Top-up & balance transfer facility available</li>
+              <li>✔ Loan for commercial property purchase</li>
+            </ul>
+            <ul>
+              <li>
+                ✔ Home Loans for under construction, constructed, Land etc
+              </li>
+              <li>✔ Loan Against Property up to ₹15 Cr</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us">
+      <div class="about-container">
+        <h2>About Alaknanda Solutions</h2>
+        <p>
+          Founded and led by Mr. Mukesh Manjkhola, a banking and finance
+          professional with over 32 years of experience, Alaknanda Solutions is
+          a trusted name in financial consulting and loan advisory services.
+          With deep expertise in strategic planning, channel management, and
+          nationwide business operations, the company provides personalized
+          financial solutions that empower both individuals and businesses.
+          Committed to transparency, integrity, and results, Alaknanda Solutions
+          ensures every client receives expert guidance and meaningful support
+          throughout their financial journey.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission, Vision & Values Section -->
+    <section id="mission-vision" class="mission-vision">
+      <div class="container">
+        <h2>Our Mission, Vision & Values</h2>
+        <div class="mv-grid">
+          <div class="mv-card">
+            <h3>Our Mission</h3>
+            <p>
+              "To serve our clients with dedication and excellence by offering
+              tailored services that solve real problems, build trust, and
+              support their success."
+            </p>
+          </div>
+          <div class="mv-card">
+            <h3>Our Vision</h3>
+            <p>
+              "To be the most trusted and preferred service partner, recognized
+              for delivering excellence, innovation, and value across every
+              client interaction."
+            </p>
+          </div>
+          <div class="mv-card">
+            <h3>Our Values</h3>
+            <div class="values-list">
+              <span>Customer Centric</span>
+              <span>Integrity</span>
+              <span>Trust</span>
+              <span>Excellence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners">
+      <h2>All Leading banking and NBFCS</h2>
+      <div class="partner-logos">
+        <img
+          src="{{ url_for('static', filename='img/AU.png') }}"
+          alt="AU Bank"
+        />
+        <img
+          src="{{ url_for('static', filename='img/Bajaj.png') }}"
+          alt="Bajaj"
+        />
+        <img
+          src="{{ url_for('static', filename='img/Chola.jpeg') }}"
+          alt="Chola"
+        />
+        <img
+          src="{{ url_for('static', filename='img/Godrej.png') }}"
+          alt="Godrej"
+        />
+        <img
+          src="{{ url_for('static', filename='img/Piramal.png') }}"
+          alt="Piramal"
+        />
+        <img
+          src="{{ url_for('static', filename='img/Protium.png') }}"
+          alt="Protium"
+        />
+        <img
+          src="{{ url_for('static', filename='img/SBI_HL.png') }}"
+          alt="SBI"
+        />
+        <img
+          src="{{ url_for('static', filename='img/TruHome.png') }}"
+          alt="TruHome"
+        />
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <div class="contact-content">
+          <div class="contact-form">
+            <form action="#" method="post">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Full Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="your.email@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="+91 1234567890"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Tell us how we can help you..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <h3>Contact Details</h3>
+            <div class="contact-details">
+              <p>
+                <i class="location-icon"></i> FB-147, High Street Business
+                Park,<br />Kapurwadi, Thane (W)-400 607, Maharashtra
+              </p>
+              <p>
+                <i class="phone-icon"></i> +91 9769207860 | +91 9702001230 | +91
+                9987600400
+              </p>
+              <p><i class="email-icon"></i> info@alaknandasolutions.in</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <img
+              src="{{ url_for('static', filename='img/logo 1.png') }}"
+              alt="Alaknanda Solutions Logo"
+              class="footer-logo"
+            />
+            <h3>Alaknanda Solutions</h3>
+            <p>
+              Your trusted partner for financial solutions. Empowering
+              individuals and businesses with reliable loan options.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#mission-vision">Mission & Vision</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-section">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="#">Personal Loan</a></li>
+                <li><a href="#">Business Loan</a></li>
+                <li><a href="#">Home Loan</a></li>
+                <li><a href="#">Machine Loan</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-section">
+              <h4>Contact Info</h4>
+              <div class="contact-details">
+                <p>
+                  <i class="location-icon"></i> FB-147, High Street Business
+                  Park,<br />Kapurwadi, Thane (W)-400 607, Maharashtra
+                </p>
+                <p>
+                  <i class="phone-icon"></i> +91 9769207860 | +91 9702001230 |
+                  +91 9987600400
+                </p>
+                <p><i class="email-icon"></i> info@alaknandasolutions.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>© 2025 Alaknanda Solutions. All rights reserved.</p>
+            <p class="developed-by">
+              Developed with by <span>InnovateHive</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
