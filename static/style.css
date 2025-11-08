@@ -510,15 +510,15 @@ img {
   align-items: center;
   justify-content: center;
   box-shadow: 0 20px 40px rgba(111, 66, 193, 0.2);
+  overflow: hidden; /* remove if it’s clipping */
   transition: var(--transition);
 }
 
 .offer-img img {
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  object-fit: cover;
-  transition: var(--transition);
+  width: 50%;
+  height: auto;
+  border-radius: 0;        /* remove circular clip */
+  object-fit: contain;     /* ensures full image fits */
 }
 
 
