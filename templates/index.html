@@ -52,7 +52,7 @@
     <section id="home" class="hero">
       <div class="hero-slider">
         <!-- Slide 1: Credit Card -->
-        <div class="hero-slide active">
+        <!-- <div class="hero-slide active">
           <div class="hero-text">
             <h2>Looking for <span>Credit Card</span></h2>
             <p>
@@ -67,7 +67,7 @@
               alt="Looking for credit card"
             />
           </div>
-        </div>
+        </div> -->
 
         <!-- Slide 2: Personal Loan -->
         <div class="hero-slide">
@@ -79,10 +79,7 @@
             </p>
           </div>
           <div class="hero-image">
-            <img
-              src="{{ url_for('static', filename='img/logo 1.png') }}"
-              alt="Company Logo"
-            />
+            <img src="../static/img/509020-PI3106-79.jpg" alt="Company Logo" />
           </div>
         </div>
 
@@ -102,7 +99,7 @@
               For example: 'image_8290ad.jpg'
             -->
             <img
-              src="../static/img/high-angle-banknotes-with-lock-house.jpg"
+              src="../static/img/picture-two-young-businessmen-street-shaking-hands.jpg"
               alt="Unsecured Business Loan"
             />
           </div>
@@ -112,64 +109,68 @@
       <div class="slider-dots">
         <span class="dot active" data-slide="0"></span>
         <span class="dot" data-slide="1"></span>
-        <!-- NEW DOT for Slide 3 -->
-        <span class="dot" data-slide="2"></span>
       </div>
     </section>
 
     <!-- Loan & Services Section -->
+    <!-- Loan & Services Section -->
     <section class="services">
-      <div class="service-card">
-        <img
-          src="{{ url_for('static', filename='img/PL.png') }}"
-          alt="Personal Loan"
-        />
-        <h3>PERSONAL LOAN</h3>
-        <p>
-          This allows consumers to compare the key loan features offered by top
-          lenders.
-        </p>
-        <a href="#">Check Eligibility →</a>
-      </div>
+      <h2>Types of Loans</h2>
+      <div class="service-card-container">
+        <!-- NEW WRAPPER -->
+        <div class="service-card">
+          <img
+            src="{{ url_for('static', filename='img/PL.png') }}"
+            alt="Personal Loan"
+          />
+          <h3>PERSONAL LOAN</h3>
+          <p>
+            This allows consumers to compare the key loan features offered by
+            top lenders.
+          </p>
+          <a href="#">Check Eligibility →</a>
+        </div>
 
-      <div class="service-card">
-        <img
-          src="{{ url_for('static', filename='img/BL.png') }}"
-          alt="Business Loan"
-        />
-        <h3>BUSINESS LOAN</h3>
-        <p>
-          Expand your business with loans & overdrafts at low interest rates
-          from Banks & NBFCs.
-        </p>
-        <a href="#">Check Eligibility →</a>
-      </div>
+        <div class="service-card">
+          <img
+            src="{{ url_for('static', filename='img/BL.png') }}"
+            alt="Business Loan"
+          />
+          <h3>BUSINESS LOAN</h3>
+          <p>
+            Expand your business with loans & overdrafts at low interest rates
+            from Banks & NBFCs.
+          </p>
+          <a href="#">Check Eligibility →</a>
+        </div>
 
-      <div class="service-card">
-        <img
-          src="{{ url_for('static', filename='img/HL.png') }}"
-          alt="Home Loan"
-        />
-        <h3>HOME LOAN / LAP</h3>
-        <p>
-          Get Home loans for your dream home & encash your property for
-          business/non-business needs.
-        </p>
-        <a href="#">Check Eligibility →</a>
-      </div>
+        <div class="service-card">
+          <img
+            src="{{ url_for('static', filename='img/HL.png') }}"
+            alt="Home Loan"
+          />
+          <h3>HOME LOAN / LAP</h3>
+          <p>
+            Get Home loans for your dream home & encash your property for
+            business/non-business needs.
+          </p>
+          <a href="#">Check Eligibility →</a>
+        </div>
 
-      <div class="service-card">
-        <img
-          src="{{ url_for('static', filename='img/ML.png') }}"
-          alt="Two Wheeler"
-        />
-        <h3>MACHINERY LOAN</h3>
-        <p>
-          Get financing for industrial machinery and equipment at competitive
-          rates.
-        </p>
-        <a href="#">Check Eligibility →</a>
+        <div class="service-card">
+          <img
+            src="{{ url_for('static', filename='img/ML.png') }}"
+            alt="Two Wheeler"
+          />
+          <h3>MACHINE LOAN</h3>
+          <p>
+            Get financing for industrial machinery and equipment at competitive
+            rates.
+          </p>
+          <a href="#">Check Eligibility →</a>
+        </div>
       </div>
+      <!-- END OF NEW WRAPPER -->
     </section>
 
     <!-- Loan Offers Section -->
