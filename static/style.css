@@ -356,13 +356,44 @@ img {
 }
 
 /* -------------------- SERVICES SECTION -------------------- */
+/* -------------------- SERVICES SECTION -------------------- */
 .services {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  /* display: grid; */ /* MOVED */
+  /* grid-template-columns: repeat(4, 1fr); */ /* MOVED */
+  /* gap: 40px; */ /* MOVED */
   padding: 100px var(--container-padding);
   background: var(--bg-white);
   position: relative;
+}
+
+/* NEW: Styles for the heading */
+.services h2 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 700;
+  position: relative;
+}
+
+/* NEW: Underline for the heading */
+.services h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 2px;
+}
+
+/* NEW: Rule for the card wrapper */
+.service-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 }
 
 .services::before {
@@ -520,6 +551,8 @@ img {
   border-radius: 0;        /* remove circular clip */
   object-fit: contain;     /* ensures full image fits */
 }
+
+
 
 
 .offer-details {
@@ -1400,9 +1433,12 @@ img {
   }
 
   .services {
-    padding: 80px var(--container-padding);
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
+  padding: 80px var(--container-padding);
+  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */ /* MOVED */
+}
+.service-card-container {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
 
   .offers {
     padding: 80px var(--container-padding);
@@ -1520,10 +1556,18 @@ img {
   }
 
   .services {
-    padding: 60px var(--container-padding);
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-  }
+  padding: 60px var(--container-padding);
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */ /* MOVED */
+  /* gap: 30px; */ /* MOVED */
+}
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.service-card-container {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
 
   .service-card {
     padding: 30px 20px;
@@ -1667,7 +1711,7 @@ img {
   #nav-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50%;
     right: 0;
     background: var(--bg-white);
     box-shadow: var(--shadow-hover);
@@ -1713,6 +1757,7 @@ img {
     background: rgba(255, 255, 255, 0.95);
     margin: 10px 20px;
     border-radius: var(--border-radius);
+    min-width: 0; /* <-- ADD THIS LINE */
   }
 
   .dropdown-menu li a {
@@ -1797,10 +1842,17 @@ img {
   }
 
   .services {
-    grid-template-columns: 1fr;
-    padding: 50px var(--container-padding);
-    gap: 25px;
-  }
+  /* grid-template-columns: 1fr; */ /* MOVED */
+  padding: 50px var(--container-padding);
+  /* gap: 25px; */ /* MOVED */
+}
+.services h2 {
+  font-size: 1.8rem;
+}
+.service-card-container {
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
 
   .service-card {
     padding: 25px 15px;
